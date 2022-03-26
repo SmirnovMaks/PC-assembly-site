@@ -176,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 160%;
 }
 .process {
+    position: relative;
     padding-bottom: 20rem;
 }
 .process__tittle {
@@ -193,10 +194,44 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 140%;
 }
 .process__description {
-    width: 41rem;
+    max-width: 41rem;
     font-family: 'Roboto';
     font-size: 1.6rem;
     line-height: 160%;
     opacity: .5;
+    margin-bottom: 8rem;
     padding-top: 4.9rem;
+}
+.process__columns {
+    display: flex;
+}
+.process__columns::after {
+    content: '';
+    display: block;
+    width: 130rem;
+    height: .2rem;
+    position: absolute;
+    top: 31.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+}
+.process__item{
+     max-width: 30.6rem;
+}
+.process__item:not(last-child) {
+    margin-left: 1.8rem;
+}
+.process__work {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 140%;
+    padding-bottom: 6.5rem;
+}
+.process__text {
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    line-height: 160%;
+    opacity: 0.5;
 }
