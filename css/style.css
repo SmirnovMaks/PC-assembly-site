@@ -14,6 +14,14 @@
          url('../fonts/Roboto-Bold.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    font-weight: medium;
+    font-style: normal;
+    src: url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.woff2') format('woff2');
+}
+
 *, *::after, *::before{
     box-sizing: border-box;
 }
@@ -53,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 .button{
+    font-family: 'Roboto';
     border-radius: 5rem;
     padding: 1rem 3rem;
     color: #ffffff;
@@ -86,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 4rem;
 }
 .header__button{
-    font-family: 'Roboto';
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     font-size: 1.6rem;
     line-height: 150%;
@@ -118,7 +126,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 7.6rem;
 }
 .main-display__button {
-    font-family: 'Roboto';
     font-weight: bold;
     line-height: 150%;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
@@ -182,6 +189,9 @@ h1, h2, h3, h4, h5, h6 {
 .process__tittle {
     display: flex;
 }
+.process .process__img {
+    transform: rotate(45deg);
+}
 .process__img {
     width: 9rem;
     height: 4.5rem;
@@ -234,4 +244,49 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
     line-height: 160%;
     opacity: 0.5;
+}
+.command {
+    margin-bottom: 19.78rem;
+}
+.command__wrap {
+    margin-top: 11.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.command__item {
+    width: 41.6rem;
+    height: 37.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.command__photo {
+    width: 19rem;
+    height: 19rem;
+    margin-bottom: 4rem;
+}
+.command__spec {
+    font-family: 'Roboto';
+    font-weight: medium;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin-bottom: 1.5rem;
+}
+.command__prof {
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    line-height: 160%;
+    opacity: .8;
+    margin-bottom: 3rem;
+}
+.command__link {
+    line-height: 150%;
+    text-align: center;
+    display: block;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 14.3rem;
+    height: 4.4rem;
 }
