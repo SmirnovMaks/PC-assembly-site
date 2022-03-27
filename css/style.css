@@ -60,6 +60,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 130rem;
     margin: 0 auto;
 }
+:root {
+    --text-size-medium: 1.6rem;
+}
+.block__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .button{
     font-family: 'Roboto';
     border-radius: 5rem;
@@ -86,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__nav a{
     font-family: 'Roboto';
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 150%;
 }
 .header__logo{
@@ -96,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__button{
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 150%;
 }
 .main-display__background {
@@ -126,6 +135,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 7.6rem;
 }
 .main-display__button {
+    font-size: var(--text-size-medium);
     font-weight: bold;
     line-height: 150%;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
@@ -134,12 +144,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 10.2rem;
     height: 11.2rem;
     background-color: #121212;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
-.timer__item:not(last-child){
+.timer__item:not(:last-child){
     margin-right: 3rem;
 }
 .timer__count {
@@ -150,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .timer__text {
     font-family: 'Roboto';
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     opacity: 0.4;
     line-height: 140%;
 }
@@ -179,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .work__description {
     font-family: 'Roboto';
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
 }
 .process {
@@ -229,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 .process__item{
      max-width: 30.6rem;
 }
-.process__item:not(last-child) {
+.process__item:not(:last-child) {
     margin-left: 1.8rem;
 }
 .process__work {
@@ -257,10 +263,6 @@ h1, h2, h3, h4, h5, h6 {
 .command__item {
     width: 41.6rem;
     height: 37.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 .command__photo {
     width: 19rem;
@@ -276,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .command__prof {
     font-family: 'Roboto';
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
     opacity: .8;
     margin-bottom: 3rem;
@@ -289,6 +291,9 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     width: 14.3rem;
     height: 4.4rem;
+}
+.assembly {
+    margin-bottom: 24.42rem;
 }
 .assembly__wrap{
         display: flex;
@@ -306,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .assembly__description {
     font-family: 'Roboto';
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
     opacity: 0.5;
     margin-bottom: 4.5rem;
@@ -315,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 .assembly__button {
     font-family: 'Roboto';
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 150%;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     margin-bottom: 4.08rem;
@@ -324,11 +329,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 29rem;
     height: 5rem;
     display: flex;
+    justify-content: space-between;
 }
 .assembly__item {
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50%;
+}
+.assembly__item img {
     width: 2.4rem;
     height: 2.4rem;
-}
-.assembly__item:not(last-child){
-    margin-right: 5.6rem;
 }
