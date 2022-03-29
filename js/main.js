@@ -15,10 +15,10 @@ modalWindow.addEventListener('click', (e) => {
         modalWindow.style.display = 'none';
         body.classList.remove('noscroll');
     }
-})
+});
 
 modalClose.addEventListener('click', () => {
     modalWindow.style.display = 'none';
     body.classList.remove('noscroll');
 
-})
+});

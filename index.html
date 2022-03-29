@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Сборка ПК</title>
 </head>
 
@@ -30,19 +31,19 @@
                 <h1 class="main-display__header">Собираем игровой ПК под ваш бюджет</h1>
                 <div class="timer main-display__timer">
                     <div class="timer__item block__center">
-                        <div class="timer__count">18</div>
+                        <span id="days" class="timer__count">18</span>
                         <div class="timer__text">Дней</div>
                     </div>
                     <div class="timer__item block__center">
-                        <div class="timer__count">18</div>
+                        <span id="hours" class="timer__count">18</span>
                         <div class="timer__text">Часов</div>
                     </div>
                     <div class="timer__item block__center">
-                        <div class="timer__count">18</div>
+                        <span id="minutes" class="timer__count">18</span>
                         <div class="timer__text">Минут</div>
                     </div>
                     <div class="timer__item block__center">
-                        <div class="timer__count">18</div>
+                        <span id="seconds" class="timer__count">18</span>
                         <div class="timer__text">Секунд</div>
                     </div>
                 </div>
@@ -204,6 +205,7 @@
         </form>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
 </body>
 
 </html>
