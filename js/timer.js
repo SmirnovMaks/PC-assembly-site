@@ -7,6 +7,17 @@ const timer = (id, deadline) => {
         }
     };
 
+    const numWord = (value, words) => {
+        value = Math.abs(value) % 100;
+        const lastNum = value % 10;
+        if (value > 10 & value < 20) return words[2];
+        if (lastNum > 1 && lastNum < 5) return words[1];
+        if (lastNum === 1) return words[0];
+        return words[2];
+
+    };
+
+
     const getTimeRemaining = (endtime) => {
         const t = Date.parse(endtime) - Date.parse(new Date()) - 10800000,
             seconds = Math.floor((t / 1000) % 60),
@@ -28,8 +39,14 @@ const timer = (id, deadline) => {
             days = timer.querySelector("#days"),
             hours = timer.querySelector("#hours"),
             minutes = timer.querySelector("#minutes"),
-            seconds = timer.querySelector("#seconds"),
-            timeInterval = setInterval(updateClock, 1000);
+            seconds = timer.querySelector(".seconds"),
+            timeInterval = setInterval(updateClock, 500);
+
+
+        daysText = timer.querySelector('#days__text'),
+            hoursText = timer.querySelector('#hours__text'),
+            minutesText = timer.querySelector('#minutes__text'),
+            secondsText = timer.querySelector('#seconds__text');
 
         updateClock();
 
@@ -40,6 +57,12 @@ const timer = (id, deadline) => {
             hours.textContent = addZero(t.hours);
             minutes.textContent = addZero(t.minutes);
             seconds.textContent = addZero(t.seconds);
+
+            daysText.textContent = numWord(t.days, ['день', 'дня', 'дней']);
+            hoursText.textContent = numWord(t.hours, ['час', 'часа', 'часов']);
+            minutesText.textContent = numWord(t.minutes, ['минута', 'минуты', 'минут']);
+            secondsText.textContent = numWord(t.seconds, ['секунда', 'секунды', 'секунд']);
+
 
             if (t.total <= 0) {
                 days.textContent = "00";
@@ -55,6 +78,6 @@ const timer = (id, deadline) => {
     setClock(id, deadline);
 };
 
-let deadLine = '2022-04-15';
+let deadLine = '2022-8-15';
 
 timer('.timer', deadLine);

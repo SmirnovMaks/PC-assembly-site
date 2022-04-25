@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/timer.js" defer></script>
+    <script src="js/smothScroll.js" defer></script>
+
     <title>Сборка ПК</title>
 </head>
 
@@ -18,9 +23,9 @@
                 <img src="img/logo.svg" alt="">
             </a>
             <nav class="header__nav">
-                <a href="#">Чем занимаемся</a>
-                <a href="#">Процесс работы</a>
-                <a href="#">Команда</a>
+                <a href="#work">Чем занимаемся</a>
+                <a href="#process">Процесс работы</a>
+                <a href="#command">Команда</a>
             </nav>
             <button type="button" class="button header__button button__modal">Оставить заявку</button>
         </div>
@@ -32,19 +37,19 @@
                 <div class="timer main-display__timer">
                     <div class="timer__item block__center">
                         <span id="days" class="timer__count">18</span>
-                        <div class="timer__text">Дней</div>
+                        <div id="days__text" class="timer__text">Дней</div>
                     </div>
                     <div class="timer__item block__center">
                         <span id="hours" class="timer__count">18</span>
-                        <div class="timer__text">Часов</div>
+                        <div id="hours__text" class="timer__text">Часов</div>
                     </div>
                     <div class="timer__item block__center">
                         <span id="minutes" class="timer__count">18</span>
-                        <div class="timer__text">Минут</div>
+                        <div id="minutes__text" class="timer__text">Минут</div>
                     </div>
                     <div class="timer__item block__center">
-                        <span id="seconds" class="timer__count">18</span>
-                        <div class="timer__text">Секунд</div>
+                        <span id="seconds" class="timer__count seconds">18</span>
+                        <div id="seconds__text" class="timer__text">Секунд</div>
                     </div>
                 </div>
                 <button class="button main-display__button button__modal">Оставить заявку</button>
@@ -53,7 +58,7 @@
                 <img src="img/main-screen__bgc.jpg" alt="">
             </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <div class="work__wrap">
                     <div class="work__img">
@@ -74,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="process">
+        <section class="process" id="process">
             <div class="container">
                 <div class="process__wrap">
                     <div class="process__tittle">
@@ -113,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="command">
+        <section class="command" id="command">
             <div class="container">
                 <div class="process__tittle">
                     <div class="process__img command__img">
@@ -204,8 +209,8 @@
             </div>
         </form>
     </main>
-    <script src="js/main.js"></script>
-    <script src="js/timer.js"></script>
+
+
 </body>
 
 </html>
