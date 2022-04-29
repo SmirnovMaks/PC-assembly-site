@@ -486,8 +486,8 @@ input[type="text"] [type="tel"] [type="email"] {
     padding-right: 16px;
 }
 .noscroll .main-display__background {
-    padding-right: 16px;
+    padding-right: 15px;
 }
 .noscroll .p {
-    padding-right: 16px;
+    padding-right: 15px;
 }
