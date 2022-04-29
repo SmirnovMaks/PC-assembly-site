@@ -483,4 +483,11 @@ input[type="text"] [type="tel"] [type="email"] {
 .noscroll {
     overflow: hidden;
     height: 100%;
+    padding-right: 16px;
+}
+.noscroll .main-display__background {
+    padding-right: 16px;
+}
+.noscroll .p {
+    padding-right: 16px;
 }

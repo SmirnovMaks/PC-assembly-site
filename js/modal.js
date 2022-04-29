@@ -7,6 +7,7 @@ buttonModals.forEach((item) => {
     item.addEventListener('click', () => {
         modalWindow.style.display = 'flex';
         body.classList.add('noscroll');
+
     });
 });
 modalWindow.addEventListener('click', (e) => {
